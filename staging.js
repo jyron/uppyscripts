@@ -21,7 +21,7 @@ const videoFileTypes = ['.mp4', '.mov', '.qt', '.m4v', '.mpg', '.mpeg', '.mp2', 
     })
     .use(AwsS3, {
         getUploadParameters (file) {
-            let url = 'https://mobile-api.development.hopper.com/api/v2/video/storage/upload/signed' // the environment will need to be passed as a parameter
+            let url = 'https://mobile-api.staging.hopper.com/api/v2/video/storage/upload/signed' // the environment will need to be passed as a parameter
 
             let email = document.getElementById('email').value                     
             let instagramHandle = document.getElementById('instagram_handle').value      
